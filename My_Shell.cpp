@@ -3,7 +3,13 @@
 #include <limits.h>
 using namespace std;
 
-#include "Parse.h"
+#include "Parse.hpp"
+
+void print(vector<string>& words){
+    for(auto &i : words){
+        cout << i << endl;
+    }
+}
 
 int main(){
     // Get the current directory to print it 
@@ -22,6 +28,10 @@ int main(){
         getline(cin,command);
 
         // parse the command
+        vector<string> words = tokenize(command);
+
+        
+        
 
     }
 
